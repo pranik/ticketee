@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'devise'
 gem "dynamic_form"
 gem 'jquery-rails'
 gem 'rails', '3.2.3'
