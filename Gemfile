@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'devise'
+gem 'devise', '~> 2.0.4'
 gem "dynamic_form"
 gem 'jquery-rails'
 gem 'rails', '3.2.3'
@@ -31,6 +31,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl'
+  gem 'thin'
 end
 
 # To use ActiveModel has_secure_password
