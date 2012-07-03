@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120702150256) do
+ActiveRecord::Schema.define(:version => 20120703135053) do
 
   create_table "forem_posts", :force => true do |t|
     t.integer  "topic_id"
@@ -27,6 +27,15 @@ ActiveRecord::Schema.define(:version => 20120702150256) do
     t.datetime "created_at",                 :null => false
     t.datetime "updated_at",                 :null => false
     t.integer  "posts_count", :default => 0
+  end
+
+  create_table "permissions", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "thing_id"
+    t.string   "thing_type"
+    t.string   "action"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "projects", :force => true do |t|
